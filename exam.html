@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<body>
+    <style>
+        /* .show{
+            display: none;
+        } */
+    </style>
+    <label id="myBtn">
+        <button onclick="chance()"> submit </button>
+    </label>
+
+</body>
+<script>
+    var product = [
+        {
+            id: "a",
+            title: "p1",
+            description: "qwertyuio",
+            price: 100,
+            available: "true"
+        },
+        {
+            id: "b",
+            title: "p2",
+            description: "qwertyuio",
+            price: 100,
+            available: "true"
+        },
+        {
+            id: "c",
+            title: "p3",
+            description: "qwertyuio",
+            price: 100,
+            available: "true"
+        },
+        {
+            id: "d",
+            title: "p4",
+            description: "qwertyuio",
+            price: 100,
+            available: "true"
+        },
+        {
+            id: "e",
+            title: "p5",
+            description: "qwertyuio",
+            price: 100,
+            available: "true"
+        },
+        {
+            id: "f",
+            title: "p6",
+            description: "qwertyuio",
+            price: 100,
+            available: "true"
+        },
+        {
+            id: "g",
+            title: "p7",
+            description: "qwertyuio",
+            pprice: 100,
+            available: "true"
+        },
+        {
+            id: "h",
+            title: "p8",
+            description: "qwertyuio",
+            price: 100,
+            available: "true"
+        },
+        {
+            id: "i",
+            title: "p9",
+            description: "qwertyuio",
+            price: 100,
+            available: "true"
+        },
+        {
+            id: "j",
+            title: "p10",
+            description: "qwertyuio",
+            price: 100,
+            available: "true"
+        },
+        {
+            id: "k",
+            title: "p11",
+            description: "qwertyuio",
+            price: 100,
+            available: "false"
+        },
+        {
+            id: "l",
+            title: "p12",
+            description: "qwertyuio",
+            price: 100,
+            available: "false"
+        },
+        {
+            id: "m",
+            title: "p13",
+            description: "qwertyuio",
+            price: 100,
+            available: "false"
+        },
+        {
+            id: "n",
+            title: "p14",
+            description: "qwertyuio",
+            price: 100,
+            available: "false"
+        },
+        {
+            id: "o",
+            title: "p15",
+            description: "qwertyuio",
+            price: 100,
+            available: "false"
+        }
+    ]
+
+    var a = product.filter(product => product.available == "false");
+    a.map(product => {
+        document.write("<br>" + product.title)
+    });
+
+    function chance() {
+
+        let b = product.filter(product => product.available == "true");
+
+        b.map(product => {
+            document.write("<br>" + product.title);
+        });
+
+    };
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
